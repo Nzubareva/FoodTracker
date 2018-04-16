@@ -36,6 +36,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjU-Hb-4fD">
                                         <rect key="frame" x="0.0" y="66.5" width="172" height="30"/>
                                         <state key="normal" title="Ввести название блюда"/>
+                                        <connections>
+                                            <action selector="setDafaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Z9-BT-gn1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -51,6 +54,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="n69-IU-jvT" id="6RF-h4-svR"/>
+                        <outlet property="nameTextField" destination="DLd-Hd-SAD" id="Yb1-Rl-TLR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
