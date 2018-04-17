@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var mealNameLabel: UILabel!
     @IBOutlet var photoImageView: UIImageView!
+    @IBOutlet var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,9 +65,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // make sure ViewController is notified when the user picks an image
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
-    }
-    @IBAction func setDafaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Приятного аппетита!"
     }
     
 }
